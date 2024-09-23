@@ -106,11 +106,13 @@ const Portfolio = ({ className }) => {
 
                     {/* New Layout: Pagination on the left, "Lihat Semua" on the right */}
                     <div className="pagination-button-wrapper" style={{ display: 'flex', justifyContent: 'space-between', marginTop: '20px' }}>
-                        <Pagination 
-                            currentPage={currentPage}
-                            totalPages={totalPages}
-                            paginate={paginate}
-                        />
+                        {!showAll && totalPages > 1 && (
+                            <Pagination 
+                                currentPage={currentPage}
+                                totalPages={totalPages}
+                                paginate={paginate}
+                            />
+                        )}
                         {!showAll && totalPages > 1 && (
                             <button
                                 onClick={() => setShowAll(true)}
@@ -229,4 +231,4 @@ const Pagination = ({ currentPage, totalPages, paginate }) => {
     );
 };
 
-export default Portfolio
+export default Portfolio;
