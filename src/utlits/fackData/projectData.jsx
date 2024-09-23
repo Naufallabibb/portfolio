@@ -76,6 +76,8 @@ import sertifikat27 from "../../assets/images/projects/sertifikat27.png"
 import sertifikat28 from "../../assets/images/projects/sertifikat28.png"
 import sertifikat29 from "../../assets/images/projects/sertifikat29.png"
 
+import API1 from "../../assets/images/projects/API1.png"
+
 export const projectsData = [
     {
         id: 1,
@@ -502,5 +504,11 @@ export const projectsData = [
         src: sertifikat29,
         category: "Certificate",
         title: "Juara 2 Lomba Poster Edukatif 'Mengapa Aku Harus Kuliah' Tingkat Nasional"
+    },
+    {
+        id: 72,
+        src: API1,
+        category: "API",
+        title: "API CRUD MERN Stack (Using Express.Js)"
     },
 ]
