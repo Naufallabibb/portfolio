@@ -2147,6 +2147,24 @@ ul.extra-skills li i {
     transform: scale(1.1);
   }
 
+  .show-all-button {
+    background-color: var(--primary-color); /* Warna tombol sesuai dengan warna utama */
+    color: var(--heading-color); /* Warna teks tombol */
+    border: 1px solid var(--button-border); /* Border tombol */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+}
+
+.show-all-button:hover {
+    background-color: var(--lighter-color); /* Warna saat tombol di-hover */
+    color: var(--black-color); /* Warna teks saat di-hover */
+}
+
+
 /*
 * ----------------------------------------------------------------------------------------
 * 10.TESTIMONIALS CSS STYLE

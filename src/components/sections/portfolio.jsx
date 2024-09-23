@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { RiArrowRightUpLine } from '@remixicon/react';
+import { ChevronLeft, ChevronRight, MoreHorizontal } from 'lucide-react';
 import { projectsData } from '../../utlits/fackData/projectData';
 import SlideUp from '../../utlits/animations/slideUp';
 
@@ -15,11 +16,16 @@ const Portfolio = ({ className }) => {
     const [animationClass, setAnimationClass] = useState('');
     const [modalImage, setModalImage] = useState(null);
     const [isModalVisible, setIsModalVisible] = useState(false);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [itemsPerPage] = useState(6);
+    const [showAll, setShowAll] = useState(false);
 
     const handleCategoryClick = (item) => {
         setCategory(item);
+        setCurrentPage(1);
         const randomAnimation = getRandomAnimation();
         setAnimationClass(randomAnimation);
+        setShowAll(false);  // Reset showAll state when a new category is selected
     };
 
     const openModal = (src) => {
@@ -42,9 +48,17 @@ const Portfolio = ({ className }) => {
     // Filter unique categories
     const filteredCategory = ["All", ...new Set(projectsData.map(project => project.category))];
 
-    const filteredProjects = category === 'All' 
-        ? projectsData 
+    const filteredProjects = category === 'All'
+        ? projectsData
         : projectsData.filter(image => image.category === category);
+
+    // Pagination logic
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const currentItems = showAll ? filteredProjects : filteredProjects.slice(indexOfFirstItem, indexOfLastItem);
+    const totalPages = Math.ceil(filteredProjects.length / itemsPerPage);
+
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     return (
         <section id="portfolio" className={`projects-area ${className}`}>
@@ -77,7 +91,7 @@ const Portfolio = ({ className }) => {
                         </ul>
                     </SlideUp>
                     <div className="row project-masonry-active overflow-hidden">
-                        {filteredProjects.map(({ category, id, src, title }) => (
+                        {currentItems.map(({ category, id, src, title }) => (
                             <Card 
                                 key={id} 
                                 id={id} 
@@ -88,6 +102,23 @@ const Portfolio = ({ className }) => {
                                 openModal={openModal}
                             />
                         ))}
+                    </div>
+
+                    {/* New Layout: Pagination on the left, "Lihat Semua" on the right */}
+                    <div className="pagination-button-wrapper" style={{ display: 'flex', justifyContent: 'space-between', marginTop: '20px' }}>
+                        <Pagination 
+                            currentPage={currentPage}
+                            totalPages={totalPages}
+                            paginate={paginate}
+                        />
+                        {!showAll && totalPages > 1 && (
+                            <button
+                                onClick={() => setShowAll(true)}
+                                className="show-all-button"
+                            >
+                                Lihat Semua
+                            </button>
+                        )}
                     </div>
                 </div>
             </div>
@@ -122,4 +153,80 @@ const Card = ({ category, title, src, animationClass, id, openModal }) => {
     );
 };
 
-export default Portfolio;
+const Pagination = ({ currentPage, totalPages, paginate }) => {
+    const renderPageNumbers = () => {
+        const pageNumbers = [];
+        const maxVisiblePages = 5;
+
+        if (totalPages <= maxVisiblePages) {
+            for (let i = 1; i <= totalPages; i++) {
+                pageNumbers.push(
+                    <li key={i} className={`page-item ${currentPage === i ? 'active' : ''}`}>
+                        <button onClick={() => paginate(i)} className="page-link">
+                            {i}
+                        </button>
+                    </li>
+                );
+            }
+        } else {
+            const startPage = Math.max(1, currentPage - 2);
+            const endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
+
+            if (startPage > 1) {
+                pageNumbers.push(
+                    <li key={1} className="page-item">
+                        <button onClick={() => paginate(1)} className="page-link">1</button>
+                    </li>
+                );
+                if (startPage > 2) {
+                    pageNumbers.push(<li key="start-ellipsis" className="page-item disabled"><span className="page-link"><MoreHorizontal size={16} /></span></li>);
+                }
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+                pageNumbers.push(
+                    <li key={i} className={`page-item ${currentPage === i ? 'active' : ''}`}>
+                        <button onClick={() => paginate(i)} className="page-link">
+                            {i}
+                        </button>
+                    </li>
+                );
+            }
+
+            if (endPage < totalPages) {
+                if (endPage < totalPages - 1) {
+                    pageNumbers.push(<li key="end-ellipsis" className="page-item disabled"><span className="page-link"><MoreHorizontal size={16} /></span></li>);
+                }
+                pageNumbers.push(
+                    <li key={totalPages} className="page-item">
+                        <button onClick={() => paginate(totalPages)} className="page-link">
+                            {totalPages}
+                        </button>
+                    </li>
+                );
+            }
+        }
+
+        return pageNumbers;
+    };
+
+    return (
+        <div className="pagination-container">
+            <ul className="pagination">
+                <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
+                    <button onClick={() => paginate(currentPage - 1)} className="page-link" disabled={currentPage === 1}>
+                        <ChevronLeft size={16} />
+                    </button>
+                </li>
+                {renderPageNumbers()}
+                <li className={`page-item ${currentPage === totalPages ? 'disabled' : ''}`}>
+                    <button onClick={() => paginate(currentPage + 1)} className="page-link" disabled={currentPage === totalPages}>
+                        <ChevronRight size={16} />
+                    </button>
+                </li>
+            </ul>
+        </div>
+    );
+};
+
+export default Portfolio

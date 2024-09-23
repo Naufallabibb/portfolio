@@ -322,6 +322,31 @@
         overflow-wrap: break-word; /* Memastikan kata-kata tetap berada di dalam area */
     }
 
+    .pagination {
+        display: flex;
+        justify-content: center; /* Memusatkan pagination */
+        flex-wrap: nowrap; /* Mencegah pagination terpecah menjadi beberapa baris */
+        list-style-type: none; /* Menghilangkan bullet points jika pagination menggunakan <ul> */
+        padding: 0;
+        margin: 20px 0; /* Memberi jarak dari elemen lain */
+    }
+    
+    .pagination li {
+        margin: 0 10px; /* Memberi jarak antar elemen pagination */
+    }
+    
+    .pagination-button-wrapper {
+        flex-direction: column; /* Mengatur elemen secara vertikal */
+        align-items: center;    /* Memastikan elemen-elemen berada di tengah */
+    }
+    
+      .show-all-button {
+        width: 100%;      /* Memenuhi lebar penuh */
+        display: block;   /* Agar button tampil sebagai blok penuh */
+        margin: 0 auto 20px auto; /* Atur margin atas-bawah dan memusatkan tombol */
+        padding: 10px 15px;    /* Padding lebih konsisten */
+        text-align: center;    /* Teks berada di tengah tombol */
+    }
 }
 
 
