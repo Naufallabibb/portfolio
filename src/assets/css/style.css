@@ -1102,8 +1102,8 @@ html {
     outline: none;
     transition: all 0.3s ease-in-out;
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .main-menu .navbar-header .navbar-toggle .icon-bar {
@@ -1112,6 +1112,7 @@ html {
     width: 26px;
     display: block;
     position: absolute;
+    margin-top: 0.4em;
     left: 0;
     transition: all 0.3s ease-in-out;
 }
@@ -2159,19 +2160,28 @@ ul.extra-skills li i {
   }
   
   .close {
-    color: #aaa;
+    color: var(--primary-color);
     position: absolute;
     top: 10px;
     right: 20px;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     cursor: pointer;
-    transition: color 0.2s ease;
+    transition: all 0.2s ease;
+    width: 60px; /* Menentukan ukuran kotak */
+    height: 60px; /* Menentukan ukuran kotak */
+    text-align: center; /* Pusatkan teks secara horizontal */
+    display: flex; /* Menggunakan flexbox untuk memusatkan teks secara vertikal */
+    justify-content: center; /* Menempatkan teks di tengah horizontal */
+    align-items: center; /* Menempatkan teks di tengah vertikal */
+    border-radius: 0 0 0 40px; /* Membuat sisi berbentuk bulat */
+    background-color: rgba(0, 0, 0, 0.4);
   }
   
   .close:hover,
   .close:focus {
     color: black;
+    background-color: #e0e0e0; /* Darker background on hover */
   }
   
   .details-btn {

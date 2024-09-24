@@ -40,6 +40,7 @@ const Header = () => {
         color: 'var(--heading-color)',
         transition: 'color 0.3s ease',
         whiteSpace: 'nowrap',
+        marginLeft: '12px',
     }
 
     return (
