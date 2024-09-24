@@ -1098,14 +1098,48 @@ html {
     padding: 4px 0;
     cursor: pointer;
     background: transparent;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    width: 30px;
+    height: 30px;
 }
 
 .main-menu .navbar-header .navbar-toggle .icon-bar {
-    background: var(--main-color);
+    background: var(--heading-color);
     height: 3px;
     width: 26px;
     display: block;
-    margin: 5px 0;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-menu .navbar-header .navbar-toggle .icon-bar:nth-child(1) {
+    top: 3px;
+}
+
+.main-menu .navbar-header .navbar-toggle .icon-bar:nth-child(2) {
+    top: 11px;
+}
+
+.main-menu .navbar-header .navbar-toggle .icon-bar:nth-child(3) {
+    top: 19px;
+}
+
+.main-menu .navbar-header .navbar-toggle.active .icon-bar:nth-child(1) {
+    top: 11px;
+    transform: rotate(45deg);
+}
+
+.main-menu .navbar-header .navbar-toggle.active .icon-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.main-menu .navbar-header .navbar-toggle.active .icon-bar:nth-child(3) {
+    top: 11px;
+    transform: rotate(-45deg);
 }
 
 
@@ -1821,7 +1855,8 @@ ul.extra-skills li i {
 
 .project-item.style-two {
     margin-bottom: 30px;
-
+    border-radius: 16px; /* Menambahkan sudut membulat ke item proyek */
+    overflow: hidden; /* Memastikan konten tidak keluar dari sudut yang membulat */
 }
 
 .project-item.style-two .project-image {
@@ -2119,7 +2154,7 @@ ul.extra-skills li i {
   }
   
   .modal.visible .modal-content {
-    transform: scale(1);
+    transform: scale(1.15);
     opacity: 1;
   }
   

@@ -7,6 +7,7 @@ import web6 from "../../assets/images/projects/web6.png"
 import web7 from "../../assets/images/projects/web7.png"
 import web8 from "../../assets/images/projects/web8.png"
 import web9 from "../../assets/images/projects/web9.png"
+import web10 from "../../assets/images/projects/web10.png"
 
 import userinterface1 from "../../assets/images/projects/userinterface1.png"
 import userinterface2 from "../../assets/images/projects/userinterface2.png"
@@ -32,6 +33,7 @@ import feeds2 from "../../assets/images/projects/feeds2.png"
 import feeds3 from "../../assets/images/projects/feeds3.png"
 import feeds4 from "../../assets/images/projects/feeds4.png"
 import feeds5 from "../../assets/images/projects/feeds5.png"
+import feeds6 from "../../assets/images/projects/feeds6.png"
 
 import poster1 from "../../assets/images/projects/poster1.png"
 import poster2 from "../../assets/images/projects/poster2.png"
@@ -45,6 +47,9 @@ import poster9 from "../../assets/images/projects/poster9.png"
 import poster10 from "../../assets/images/projects/poster10.png"
 import poster11 from "../../assets/images/projects/poster11.png"
 import poster12 from "../../assets/images/projects/poster12.png"
+import poster13 from "../../assets/images/projects/poster13.png"
+import poster14 from "../../assets/images/projects/poster14.png"
+import poster15 from "../../assets/images/projects/poster15.png"
 
 import sertifikat1 from "../../assets/images/projects/sertifikat1.png"
 import sertifikat2 from "../../assets/images/projects/sertifikat2.png"
@@ -83,13 +88,13 @@ export const projectsData = [
         id: 1,
         src: web1,
         category: "Website",
-        title: "Shoorai Technology Agency",
+        title: "Shoorai Construction",
     },
     {
         id: 2,
         src: web2,
         category: "Website",
-        title: "Shoorai Construction",
+        title: "Shoorai Technology Agency",
     },
     {
         id: 3,
@@ -510,5 +515,35 @@ export const projectsData = [
         src: API1,
         category: "API",
         title: "API CRUD MERN Stack (Using Express.Js)"
+    },
+    {
+        id: 73,
+        src: feeds6,
+        category: "Feeds",
+        title: "Volunteer Harisenin.com"
+    },
+    {
+        id: 74,
+        src: poster13,
+        category: "Poster",
+        title: "HIPMI-PT UAD"
+    },
+    {
+        id: 75,
+        src: poster14,
+        category: "Poster",
+        title: "Ekonomi Emporium (Ekorium)"
+    },
+    {
+        id: 76,
+        src: poster15,
+        category: "Poster",
+        title: "P2K Harmoni UAD 2023"
+    },
+    {
+        id: 77,
+        src: web10,
+        category: "Website",
+        title: "Portfolio Website (React Js)"
     },
 ]
