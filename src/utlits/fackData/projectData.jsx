@@ -8,6 +8,8 @@ import web7 from "../../assets/images/projects/web7.png"
 import web8 from "../../assets/images/projects/web8.png"
 import web9 from "../../assets/images/projects/web9.png"
 import web10 from "../../assets/images/projects/web10.png"
+import web11 from "../../assets/images/projects/web11.png"
+import web12 from "../../assets/images/projects/web12.png"
 
 import userinterface1 from "../../assets/images/projects/userinterface1.png"
 import userinterface2 from "../../assets/images/projects/userinterface2.png"
@@ -545,5 +547,17 @@ export const projectsData = [
         src: web10,
         category: "Website",
         title: "Portfolio Website (React Js)"
+    },
+    {
+        id: 78,
+        src: web11,
+        category: "Website",
+        title: "Pokemon Skilvul (React + Vite)",
+    },
+    {
+        id: 79,
+        src: web12,
+        category: "Website",
+        title: "My First Web Portfolio (Shoorai Business)",
     },
 ]
