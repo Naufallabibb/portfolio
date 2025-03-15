@@ -21,10 +21,10 @@ const Summery = () => {
                         <SlideUp>
                             <div className="about-content-part">
                                 <h2>
-                                    I'm Muhammad Naufal Labib Ramadhan, Front-End MERN Stack Developer.
+                                    I'm Muhammad Naufal Labib Ramadhan, Software Engineer
                                 </h2>
-                                <p>I'm a Front-End developer specializing in building seamless and interactive web experiences using React. With a solid foundation in the MERN stack, I bring dynamic and responsive designs to life, ensuring an engaging user experience.</p>
-                                <p>My passion for coding and web development drives me to continuously explore innovative solutions, crafting web applications that are not only functional but also visually appealing and user-friendly. I thrive on turning complex problems into elegant solutions and constantly keep up with the latest technologies to deliver high-quality, scalable, and future-proof web applications.</p>
+                                <p>I'm a Fullstack Developer specializing in building seamless and interactive web applications using React. With a strong background in web development, I create dynamic, responsive, and user-friendly designs that enhance the digital experience.</p>
+                                <p>My passion for coding drives me to explore innovative solutions and develop applications that are high-performance, scalable, and visually engaging. I excel at solving complex problems with elegant solutions and continuously stay updated with the latest technologies to deliver future-proof and impactful web applications.</p>
                                 <div className="hero-btns">
                                     <a href="https://www.linkedin.com/in/naufallabibb" className="theme-btn">Get In touch<i> <RiMailSendLine size={16} /> </i></a>
                                 </div>

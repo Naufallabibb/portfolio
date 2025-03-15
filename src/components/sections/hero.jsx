@@ -25,7 +25,7 @@ const Hero = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [typingSpeed, setTypingSpeed] = useState(150);
 
-    const texts = ["Front-End MERN Stack Developer", "Full-Stack MERN Stack Developer", "Data Analyst", "Graphic Designer"];
+    const texts = ["Front-End Developer", "Full-Stack Developer", "Data Analyst", "Graphic Designer"];
 
     useEffect(() => {
         let timer;
@@ -118,8 +118,8 @@ const Hero = () => {
                             <div className="about-content-part">
                                 <p>Hello There!</p>
                                 <h2>
-                                I'm Front-End MERN Stack Developer with a passion for 
-                                building seamless and interactive web experiences using React.
+                                I'm a Software Engineer specializing in Fullstack Development,  
+                                passionate building scalable and interactive web applications with React and modern technologies.
                                 </h2>
                                 <div className="adress-field">
                                     <ul>

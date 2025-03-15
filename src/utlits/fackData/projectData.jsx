@@ -10,6 +10,8 @@ import web9 from "../../assets/images/projects/web9.png"
 import web10 from "../../assets/images/projects/web10.png"
 import web11 from "../../assets/images/projects/web11.png"
 import web12 from "../../assets/images/projects/web12.png"
+import web13 from "../../assets/images/projects/web13.png"
+import web14 from "../../assets/images/projects/web14.png"
 
 import userinterface1 from "../../assets/images/projects/userinterface1.png"
 import userinterface2 from "../../assets/images/projects/userinterface2.png"
@@ -82,6 +84,30 @@ import sertifikat26 from "../../assets/images/projects/sertifikat26.png"
 import sertifikat27 from "../../assets/images/projects/sertifikat27.png"
 import sertifikat28 from "../../assets/images/projects/sertifikat28.png"
 import sertifikat29 from "../../assets/images/projects/sertifikat29.png"
+import sertifikat30 from "../../assets/images/projects/sertifikat30.png"
+import sertifikat31 from "../../assets/images/projects/sertifikat31.png"
+import sertifikat32 from "../../assets/images/projects/sertifikat32.png"
+import sertifikat33 from "../../assets/images/projects/sertifikat33.png"
+import sertifikat34 from "../../assets/images/projects/sertifikat34.png"
+import sertifikat35 from "../../assets/images/projects/sertifikat35.png"
+import sertifikat36 from "../../assets/images/projects/sertifikat36.png"
+import sertifikat37 from "../../assets/images/projects/sertifikat37.png"
+
+import seminar1 from "../../assets/images/projects/seminar1.png"
+import seminar2 from "../../assets/images/projects/seminar2.png"
+import seminar3 from "../../assets/images/projects/seminar3.png"
+import seminar4 from "../../assets/images/projects/seminar4.png"
+import seminar5 from "../../assets/images/projects/seminar5.png"
+import seminar6 from "../../assets/images/projects/seminar6.png"
+import seminar7 from "../../assets/images/projects/seminar7.png"
+import seminar8 from "../../assets/images/projects/seminar8.png"
+import seminar9 from "../../assets/images/projects/seminar9.png"
+import seminar10 from "../../assets/images/projects/seminar10.png"
+import seminar11 from "../../assets/images/projects/seminar11.png"
+import seminar12 from "../../assets/images/projects/seminar12.png"
+import seminar13 from "../../assets/images/projects/seminar13.png"
+
+import pembicara1 from "../../assets/images/projects/pembicara1.png"
 
 import API1 from "../../assets/images/projects/API1.png"
 
@@ -559,5 +585,149 @@ export const projectsData = [
         src: web12,
         category: "Website",
         title: "My First Web Portfolio (Shoorai Business)",
+    },
+    {
+        id: 80,
+        src: web13,
+        category: "Website",
+        title: "QuizApp Dot Indonesia",
+    },
+    {
+        id: 81,
+        src: web14,
+        category: "Website",
+        title: "NotesApp Theme API",
+    },
+    {
+        id: 82,
+        src: sertifikat30,
+        category: "Certificate",
+        title: "Hustler Mentee Digistar by Telkom Indonesia"
+    },
+    {
+        id: 83,
+        src: sertifikat31,
+        category: "Certificate",
+        title: "Frontend Developer (React)"
+    },
+    {
+        id: 84,
+        src: sertifikat32,
+        category: "Certificate",
+        title: "Software Engineer"
+    },
+    {
+        id: 85,
+        src: sertifikat33,
+        category: "Certificate",
+        title: "Belajar Fundamental Aplikasi Web dengan React"
+    },
+    {
+        id: 86,
+        src: sertifikat34,
+        category: "Certificate",
+        title: "Software Engineer Intern"
+    },
+    {
+        id: 87,
+        src: sertifikat35,
+        category: "Certificate",
+        title: "Problem Solving (Basic)"
+    },
+    {
+        id: 88,
+        src: sertifikat36,
+        category: "Certificate",
+        title: "React (Basic)"
+    },
+    {
+        id: 89,
+        src: sertifikat37,
+        category: "Certificate",
+        title: "Membangun Potensi, Jelajahi Karir Unggul di Industri IT"
+    },
+    {
+        id: 90,
+        src: seminar1,
+        category: "Seminar/Webinar",
+        title: "Let's Be Aware of Depression by CIMSA UGM"
+    },
+    {
+        id: 91,
+        src: seminar2,
+        category: "Seminar/Webinar",
+        title: "International Guest Lecture in Marketing and Organizational Communication"
+    },
+    {
+        id: 92,
+        src: seminar3,
+        category: "Seminar/Webinar",
+        title: "Education Fair 2023"
+    },
+    {
+        id: 93,
+        src: seminar4,
+        category: "Seminar/Webinar",
+        title: "Form Zero to Hero: Building a Solid Financial Foundation for your Future"
+    },
+    {
+        id: 94,
+        src: seminar5,
+        category: "Seminar/Webinar",
+        title: "[Offline] IDCamp Connect Roadshow - Solo"
+    },
+    {
+        id: 95,
+        src: seminar6,
+        category: "Seminar/Webinar",
+        title: "[Offline Event] Baparekraf Developer Day 2024"
+    },
+    {
+        id: 96,
+        src: seminar7,
+        category: "Seminar/Webinar",
+        title: "IDCamp x Dicoding Live #1 - Beyond the Basics: Elevate Your Career as a Full Stack Developer in 2024"
+    },
+    {
+        id: 97,
+        src: seminar8,
+        category: "Seminar/Webinar",
+        title: "IDCamp x Dicoding Live #2 - Automation: Fast Track Your Career with UiPath and Meet MVP UiPath"
+    },
+    {
+        id: 98,
+        src: seminar9,
+        category: "Seminar/Webinar",
+        title: "IDCamp x Dicoding Live #1 - Beyond the Basics: Elevate Your Career as a Full Stack Developer in 2024"
+    },
+    {
+        id: 99,
+        src: seminar10,
+        category: "Seminar/Webinar",
+        title: "DevCoach 158 : ML Android | Buat Aplikasi Androidmu Naik Kelas dengan Generative AI"
+    },
+    {
+        id: 100,
+        src: seminar11,
+        category: "Seminar/Webinar",
+        title: "DevCoach 176: React | Cara Jitu React Membangun UI"
+    },
+    {
+        id: 101,
+        src: seminar12,
+        category: "Seminar/Webinar",
+        title: "DevCoach 122 : Back-End | Mengimplementasikan Autentikasi dan Otorisasi pada REST API"
+    },
+    {
+        id: 102,
+        src: seminar13,
+        category: "Seminar/Webinar",
+        title: "IDCamp x Dicoding Live #3 - Automation and AI Trends: How They Are Shaping the Future"
+    },
+    {
+        id: 103,
+        src: pembicara1,
+        category: "Pembicara",
+        title: "Fasilitator UAD MSIB CAMP"
     },
 ]
