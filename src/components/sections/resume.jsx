@@ -25,8 +25,11 @@ const Resume = () => {
                             <div className="single-resume">
                                 <h2>Experience</h2>
                                 <div className="experience-list">
-                                    <Card year={'Sep 2024 - Present'} title={'React Developer'} institution={'Indosat Ooredoo Hutchison Digital Camp'} />
-                                    <Card year={'Mar 2024 - Present'} title={'AWS Back-End Academy'} institution={'AWS Dicoding'} />
+                                    <Card year={'Apr 2025 - Present'} title={'AWS Back-End Academy 2025'} institution={'AWS Dicoding'} />
+                                    <Card year={'Apr 2025 - Present'} title={'Front End Developer'} institution={'PT Vortex Buana Edumedia'} />
+                                    <Card year={'Mar 2025 - Present'} title={'Landing Page Builder (Figma & WordPress)'} institution={'PT AgroMulia Internasional'} />
+                                    <Card year={'Oct 2024 - Present'} title={'Full Stack Developer (Undergraduate Thesis Project)'} institution={'Dinas Lingkungan Hidup dan Kehutanan Kabupaten Kapuas'} />
+                                    <Card year={'Sep 2024 - Mar 2025'} title={'React Developer Intermediate'} institution={'Indosat Ooredoo Hutchison Digital Camp'} />
                                     <Card year={'Aug 2024 - Sep 2024'} title={'Digistar Class Mentee Hustler 2024'} institution={'Digistar Club by Telkom Indonesia'} />
                                     <Card year={'Aug 2023 - Aug 2024'} title={'Project Manager | Full-Stack Developer | Designer Logo | Video Editor'} institution={'Mitra Tani Klaten'} />
                                     <Card year={'Oct 2022 - Mar 2024'} title={'Head of Division of Media Communication, Publication, and Documentation'} institution={'HIPMI-PT UAD'} />
