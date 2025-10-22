@@ -12,6 +12,10 @@ import web11 from "../../assets/images/projects/web11.png"
 import web12 from "../../assets/images/projects/web12.png"
 import web13 from "../../assets/images/projects/web13.png"
 import web14 from "../../assets/images/projects/web14.png"
+import web15 from "../../assets/images/projects/web15.png"
+import web16 from "../../assets/images/projects/web16.png"
+import web17 from "../../assets/images/projects/web17.png"
+import web18 from "../../assets/images/projects/web18.png"
 
 import userinterface1 from "../../assets/images/projects/userinterface1.png"
 import userinterface2 from "../../assets/images/projects/userinterface2.png"
@@ -92,6 +96,9 @@ import sertifikat34 from "../../assets/images/projects/sertifikat34.png"
 import sertifikat35 from "../../assets/images/projects/sertifikat35.png"
 import sertifikat36 from "../../assets/images/projects/sertifikat36.png"
 import sertifikat37 from "../../assets/images/projects/sertifikat37.png"
+import sertifikat38 from "../../assets/images/projects/sertifikat38.png"
+import sertifikat39 from "../../assets/images/projects/sertifikat39.png"
+import sertifikat40 from "../../assets/images/projects/sertifikat40.png"
 
 import seminar1 from "../../assets/images/projects/seminar1.png"
 import seminar2 from "../../assets/images/projects/seminar2.png"
@@ -729,5 +736,47 @@ export const projectsData = [
         src: pembicara1,
         category: "Pembicara",
         title: "Fasilitator UAD MSIB CAMP"
+    },
+    {
+        id: 104,
+        src: web15,
+        category: "Website",
+        title: "Neutron Filtering",
+    },
+    {
+        id: 105,
+        src: web16,
+        category: "Website",
+        title: "Neon Uji Dashboard 2.0",
+    },
+    {
+        id: 106,
+        src: web17,
+        category: "Website",
+        title: "LabDLHK Kab.Kapuas",
+    },
+    {
+        id: 107,
+        src: web18,
+        category: "Website",
+        title: "Horus Technology Exam",
+    },
+    {
+        id: 108,
+        src: sertifikat38,
+        category: "Certificate",
+        title: "IDCamp React Intermediate"
+    },
+    {
+        id: 109,
+        src: sertifikat39,
+        category: "Certificate",
+        title: "LandingPage Builder Internship"
+    },
+    {
+        id: 110,
+        src: sertifikat40,
+        category: "Certificate",
+        title: "Front-End Developer Internship"
     },
 ]

@@ -118,8 +118,7 @@ const Hero = () => {
                             <div className="about-content-part">
                                 <p>Hello There!</p>
                                 <h2>
-                                I'm a Software Engineer specializing in Fullstack Development,  
-                                passionate building scalable and interactive web applications with React and modern technologies.
+                                Software Engineer passionate about crafting seamless, data-driven, and scalable web experiences using React, Vue, and Laravel.
                                 </h2>
                                 <div className="adress-field">
                                     <ul>
