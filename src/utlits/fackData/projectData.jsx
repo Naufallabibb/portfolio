@@ -16,6 +16,8 @@ import web15 from "../../assets/images/projects/web15.png"
 import web16 from "../../assets/images/projects/web16.png"
 import web17 from "../../assets/images/projects/web17.png"
 import web18 from "../../assets/images/projects/web18.png"
+import web19 from "../../assets/images/projects/web19.png"
+import web20 from "../../assets/images/projects/web20.png"
 
 import userinterface1 from "../../assets/images/projects/userinterface1.png"
 import userinterface2 from "../../assets/images/projects/userinterface2.png"
@@ -778,5 +780,17 @@ export const projectsData = [
         src: sertifikat40,
         category: "Certificate",
         title: "Front-End Developer Internship"
+    },
+    {
+        id: 111,
+        src: web19,
+        category: "Website",
+        title: "Qiscus Chat Apps",
+    },
+    {
+        id: 112,
+        src: web20,
+        category: "Website",
+        title: "Study.io Dashboard",
     },
 ]
